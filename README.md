@@ -1,4 +1,4 @@
-# SIN-Hermes-Provider-Bundle
+# SIN-Code-FireworksAI-OpenCode-Config
 
 Fireworks AI Pool-Konfiguration für OpenCode CLI — 12 Modelle mit temperatur 0.
 
@@ -13,7 +13,7 @@ Fireworks AI Pool-Konfiguration für OpenCode CLI — 12 Modelle mit temperatur 
 
 ```bash
 mkdir -p ~/.config/opencode
-curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode.json -o ~/.config/opencode/opencode.json
+curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode.json -o ~/.config/opencode/opencode.json
 ```
 
 Danach `fw_DEIN_KEY` durch deinen echten API-Key ersetzen.
@@ -21,7 +21,7 @@ Danach `fw_DEIN_KEY` durch deinen echten API-Key ersetzen.
 ### One-Liner Installer
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode-config-install.sh | bash -s -- --api-key fw_DEIN_KEY
+curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode-config-install.sh | bash -s -- --api-key fw_DEIN_KEY
 ```
 
 Bestehende Settings bleiben erhalten. Fireworks Provider + 12 Modelle werden hinzugefügt.
@@ -29,10 +29,8 @@ Bestehende Settings bleiben erhalten. Fireworks Provider + 12 Modelle werden hin
 ### Config kaputt? Repair
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode-config-repair.sh | bash
+curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode-config-repair.sh | bash
 ```
-
-Erkennt broken JSON oder fehlenden Provider. Bewahrt was geht, fügt Fireworks + 12 Modelle hinzu.
 
 ---
 
@@ -42,19 +40,7 @@ Erkennt broken JSON oder fehlenden Provider. Bewahrt was geht, fügt Fireworks +
 opencode chat                                           # default: deepseek-v4-pro
 opencode chat --model deepseek-v4-pro --variant high    # 64000 thinking tokens
 opencode chat --model kimi-k2p6 --variant max            # 64000 thinking tokens + vision
-opencode chat --model gpt-oss-120b                       # kein thinking, deterministisch
-opencode chat --model glm-5p1 --variant off              # kein thinking
 ```
-
-### Varianten
-
-| Variant | Thinking | Typisch für |
-|---------|----------|-------------|
-| `off` | disabled | Schnelle Antworten, kein Reasoning |
-| `low` | 4000 tokens | Leichtes Reasoning |
-| `medium` | 16000 tokens | Standard |
-| `high` | 32000-64000 tokens | Komplexe Aufgaben |
-| `max` | 64000-65536 tokens | Maximales Reasoning |
 
 ### Modelle
 
@@ -73,25 +59,6 @@ opencode chat --model glm-5p1 --variant off              # kein thinking
 | GPT-OSS 120B | `accounts/fireworks/models/gpt-oss-120b` | — | nein | 131K |
 | GPT-OSS 20B | `accounts/fireworks/models/gpt-oss-20b` | — | nein | 131K |
 
-### Python / curl
-
-```python
-from openai import OpenAI
-client = OpenAI(
-    base_url="https://sinatorpool-router.delqhi.com/inference/v1",
-    api_key="fw_DEIN_KEY",
-)
-resp = client.chat.completions.create(
-    model="deepseek-v4-pro",
-    messages=[{"role": "user", "content": "Hallo"}],
-)
-```
-
-```bash
-curl https://sinatorpool-router.delqhi.com/inference/v1/models \
-  -H "Authorization: Bearer fw_DEIN_KEY"
-```
-
 ---
 
 ## Was im Repo ist
@@ -105,6 +72,13 @@ curl https://sinatorpool-router.delqhi.com/inference/v1/models \
 | `INSTALL.md` | Detaillierte Install-Optionen + Troubleshooting |
 | `requirements.txt` | Python-Deps für Tests (`pytest`) |
 | `tests/test_opencode_config.py` | Test-Suite (19 Tests, 18 passed) |
+
+---
+
+## Hermes?
+
+Für Hermes gibt's ein separates Config-Repo:
+→ [SIN-Hermes-Provider-Bundle](https://github.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle)
 
 ---
 
