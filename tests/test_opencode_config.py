@@ -104,8 +104,8 @@ def _assert_provider_matches(provider, name):
         assert mg["id"] == mr["id"], f"[{name}] {m} id"
         assert mg["name"] == mr["name"], f"[{name}] {m} name"
         assert mg["options"] == mr["options"], f"[{name}] {m} options"
-        assert set(mg["variants"].keys()) == set(mr["variants"].keys()), f"[{name}] {m} variant keys"
-        for v in mr["variants"]:
+        assert mg.get("variants",{}) == mr.get("variants",{}), f"[{name}] {m} variants"
+        for v in mr.get("variants", {}):
             assert mg["variants"][v] == mr["variants"][v], f"[{name}] {m} variant {v}"
         assert mg["limit"] == mr["limit"], f"[{name}] {m} limit"
         if "modalities" in mr:
@@ -166,8 +166,9 @@ class TestInstall:
             fw = cfg["provider"]["fireworks-ai"]
             for m_name in REFERENCE_PROVIDER["models"]:
                 assert m_name in fw["models"], f"missing model {m_name}"
-                for v in ["off", "low", "medium", "high", "max"]:
-                    assert v in fw["models"][m_name]["variants"], f"missing variant {v} in {m_name}"
+                if "variants" in REFERENCE_PROVIDER["models"][m_name]:
+                    for v in ["off", "low", "medium", "high", "max"]:
+                        assert v in fw["models"][m_name]["variants"], f"missing variant {v} in {m_name}"
 
     def test_budgets(self):
         with tempfile.TemporaryDirectory() as td:
@@ -199,7 +200,7 @@ class TestInstall:
             fw = cfg["provider"]["fireworks-ai"]
             for m_name, m in fw["models"].items():
                 assert m["options"].get("temperature") == 0, f"{m_name} default temp != 0"
-                for v_name, v in m["variants"].items():
+                for v_name, v in m.get("variants", {}).items():
                     assert v.get("temperature") == 0, f"{m_name}/{v_name} temp != 0"
 
     def test_output_limits(self):
