@@ -446,23 +446,6 @@
           "options": {
             "temperature": 0
           },
-          "variants": {
-            "off": {
-              "temperature": 0
-            },
-            "low": {
-              "temperature": 0
-            },
-            "medium": {
-              "temperature": 0
-            },
-            "high": {
-              "temperature": 0
-            },
-            "max": {
-              "temperature": 0
-            }
-          },
           "limit": {
             "context": 131072,
             "output": 65536
@@ -473,23 +456,6 @@
           "name": "GPT-OSS 20B (SIN)",
           "options": {
             "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "temperature": 0
-            },
-            "low": {
-              "temperature": 0
-            },
-            "medium": {
-              "temperature": 0
-            },
-            "high": {
-              "temperature": 0
-            },
-            "max": {
-              "temperature": 0
-            }
           },
           "limit": {
             "context": 131072,
