@@ -3,7 +3,7 @@
 # Downloads opencode.json and merges/replaces
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode-config-repair.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode-config-repair.sh | bash
 #   bash opencode-config-repair.sh [api_key]
 
 set -euo pipefail
@@ -11,7 +11,7 @@ set -euo pipefail
 OPENCODE_DIR="${HOME}/.config/opencode"
 CONFIG_FILE="${OPENCODE_DIR}/opencode.json"
 BACKUP_DIR="${OPENCODE_DIR}/backups"
-REMOTE_URL="https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode.json"
+REMOTE_URL="https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode.json"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOCAL_TEMPLATE="${SCRIPT_DIR}/opencode.json"
 
@@ -42,7 +42,7 @@ import json, os, sys, urllib.request
 
 config_path = os.path.expanduser("~/.config/opencode/opencode.json")
 api_key = os.environ.get('REPAIR_API_KEY', '<DEIN_API_KEY>')
-remote_url = "https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode.json"
+remote_url = "https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode.json"
 local_file = os.environ.get('REPAIR_LOCAL_FILE', '')
 
 template = None

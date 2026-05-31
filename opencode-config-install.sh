@@ -3,7 +3,7 @@
 # Downloads opencode.json and merges into existing config
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode-config-install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode-config-install.sh | bash
 #   curl -fsSL ... | bash -s -- --api-key fw_xxx
 #   bash opencode-config-install.sh --api-key fw_xxx   (local, uses ./opencode.json)
 
@@ -12,7 +12,7 @@ set -euo pipefail
 OPENCODE_DIR="${HOME}/.config/opencode"
 CONFIG_FILE="${OPENCODE_DIR}/opencode.json"
 BACKUP_DIR="${OPENCODE_DIR}/backups"
-REMOTE_URL="https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode.json"
+REMOTE_URL="https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode.json"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 LOCAL_TEMPLATE="${SCRIPT_DIR}/opencode.json"
 
@@ -70,7 +70,7 @@ import json, os, sys, urllib.request
 
 config_path = os.path.expanduser("~/.config/opencode/opencode.json")
 api_key = os.environ.get('INSTALLER_API_KEY', '<DEIN_API_KEY>')
-remote_url = "https://raw.githubusercontent.com/SIN-Hermes-Bundles/SIN-Hermes-Provider-Bundle/main/opencode.json"
+remote_url = "https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode.json"
 local_file = os.environ.get('INSTALLER_LOCAL_FILE', '')
 
 template = None
