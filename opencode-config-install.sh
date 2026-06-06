@@ -114,6 +114,17 @@ print(f"Base URL: {template_fw['options']['baseURL']}")
 PYEOF
 
     log_ok "opencode.json updated"
+
+    # AI-SDK compatibility fix — ensure latest provider packages
+    if [ -d "${OPENCODE_DIR}/node_modules" ]; then
+        log_info "Checking AI SDK versions..."
+        cd "${OPENCODE_DIR}"
+        if npm install @ai-sdk/fireworks@latest @ai-sdk/openai-compatible@latest --silent 2>/dev/null; then
+            log_ok "AI SDKs updated (fireworks + openai-compatible)"
+        else
+            log_warn "AI SDK update failed — provider may crash if versions are incompatible"
+        fi
+    fi
 else
     log_info "DRY RUN — would download template and merge"
 fi

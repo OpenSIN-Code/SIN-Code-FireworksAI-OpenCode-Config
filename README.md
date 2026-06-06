@@ -24,7 +24,7 @@ Danach `fw_DEIN_KEY` durch deinen echten API-Key ersetzen.
 curl -fsSL https://raw.githubusercontent.com/OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config/main/opencode-config-install.sh | bash -s -- --api-key fw_DEIN_KEY
 ```
 
-Bestehende Settings bleiben erhalten. Fireworks Provider + 12 Modelle werden hinzugefügt.
+Bestehende Settings bleiben erhalten. Fireworks Provider + 12 Modelle werden hinzugefügt. **AI-SDKs werden automatisch auf die neueste Version aktualisiert**, um `ProviderInitError`-Abstürze zu vermeiden (z. B. OpenCode 1.16.2 + `@ai-sdk/fireworks` < 2.0.53).
 
 ### Config kaputt? Repair
 

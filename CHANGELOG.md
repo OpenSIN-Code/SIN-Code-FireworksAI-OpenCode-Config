@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- `ProviderInitError`-Absturz bei OpenCode CLI 1.16.2 + `@ai-sdk/fireworks` < 2.0.53
+- `opencode-config-install.sh` führt jetzt automatisch `npm install @ai-sdk/fireworks@latest @ai-sdk/openai-compatible@latest` aus
+- Alte Sessions liefen noch im RAM, neue crashten bei SDK-Neuinitialisierung
+
 ### Added
 - Initial SIN-Code-Bundle integration (ceo-audit workflow v3)
 - OpenCode MCP server registration under `OpenSIN-Code/SIN-Code-FireworksAI-OpenCode-Config`
