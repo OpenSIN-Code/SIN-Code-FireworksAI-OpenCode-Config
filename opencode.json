@@ -7,7 +7,7 @@
       "models": {
         "deepseek-v4-pro": {
           "id": "accounts/fireworks/models/deepseek-v4-pro",
-          "name": "DeepSeek V4 Pro (SIN)",
+          "name": "DeepSeek V4 Pro",
           "options": {
             "thinking": {
               "type": "enabled"
@@ -47,7 +47,7 @@
         },
         "deepseek-v4-flash": {
           "id": "accounts/fireworks/models/deepseek-v4-flash",
-          "name": "DeepSeek V4 Flash (SIN) \u2014 billig",
+          "name": "DeepSeek V4 Flash — billig",
           "options": {
             "temperature": 0
           },
@@ -58,7 +58,7 @@
         },
         "glm-5p1": {
           "id": "accounts/fireworks/models/glm-5p1",
-          "name": "GLM 5.1 (SIN)",
+          "name": "GLM 5.1",
           "options": {
             "thinking": {
               "type": "enabled"
@@ -98,7 +98,7 @@
         },
         "glm-5p1-fast": {
           "id": "accounts/fireworks/routers/glm-5p1-fast",
-          "name": "GLM 5.1 Fast (SIN)",
+          "name": "GLM 5.1 Fast",
           "options": {
             "thinking": {
               "type": "enabled"
@@ -138,7 +138,7 @@
         },
         "kimi-k2p6": {
           "id": "accounts/fireworks/models/kimi-k2p6",
-          "name": "Kimi K2.6 (SIN)",
+          "name": "Kimi K2.6",
           "options": {
             "thinking": {
               "type": "enabled"
@@ -187,7 +187,7 @@
         },
         "qwen3p6-plus": {
           "id": "accounts/fireworks/models/qwen3p6-plus",
-          "name": "Qwen3.6 Plus (SIN)",
+          "name": "Qwen3.6 Plus",
           "options": {
             "thinking": {
               "type": "enabled"
@@ -236,7 +236,7 @@
         },
         "minimax-m2p7": {
           "id": "accounts/fireworks/models/minimax-m2p7",
-          "name": "MiniMax M2.7 (SIN)",
+          "name": "MiniMax M2.7",
           "options": {
             "reasoning_effort": "low"
           },
