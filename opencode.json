@@ -6,44 +6,38 @@
       "name": "Fireworks AI",
       "models": {
         "deepseek-v4-pro": {
-          "id": "fireworks/deepseek-v4-pro",
+          "id": "accounts/fireworks/models/deepseek-v4-pro",
           "name": "DeepSeek V4 Pro (SIN)",
           "options": {
             "thinking": {
               "type": "enabled"
-            },
-            "temperature": 0
+            }
           },
           "variants": {
             "off": {
               "thinking": {
                 "type": "disabled"
-              },
-              "temperature": 0
+              }
             },
             "low": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "medium": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "high": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "max": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             }
           },
           "limit": {
@@ -51,96 +45,135 @@
             "output": 65536
           }
         },
+        "deepseek-v4-flash": {
+          "id": "accounts/fireworks/models/deepseek-v4-flash",
+          "name": "DeepSeek V4 Flash (SIN) \u2014 billig",
+          "options": {
+            "temperature": 0
+          },
+          "limit": {
+            "context": 1048576,
+            "output": 65536
+          }
+        },
         "glm-5p1": {
-          "id": "fireworks/glm-5p1",
+          "id": "accounts/fireworks/models/glm-5p1",
           "name": "GLM 5.1 (SIN)",
           "options": {
             "thinking": {
               "type": "enabled"
-            },
-            "temperature": 0
+            }
           },
           "variants": {
             "off": {
               "thinking": {
                 "type": "disabled"
-              },
-              "temperature": 0
+              }
             },
             "low": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "medium": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "high": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "max": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             }
           },
           "limit": {
             "context": 202752,
-            "output": 65536
+            "output": 32768
           }
         },
-        "kimi-k2p6": {
-          "id": "fireworks/kimi-k2p6",
-          "name": "Kimi K2.6 (SIN)",
+        "glm-5p1-fast": {
+          "id": "accounts/fireworks/routers/glm-5p1-fast",
+          "name": "GLM 5.1 Fast (SIN)",
           "options": {
             "thinking": {
               "type": "enabled"
-            },
-            "temperature": 0
+            }
           },
           "variants": {
             "off": {
               "thinking": {
                 "type": "disabled"
-              },
-              "temperature": 0
+              }
             },
             "low": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "medium": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "high": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "max": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
+            }
+          },
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        },
+        "kimi-k2p6": {
+          "id": "accounts/fireworks/models/kimi-k2p6",
+          "name": "Kimi K2.6 (SIN)",
+          "options": {
+            "thinking": {
+              "type": "enabled"
+            }
+          },
+          "variants": {
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
+            "low": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "medium": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "high": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "max": {
+              "thinking": {
+                "type": "enabled"
+              }
             }
           },
           "limit": {
             "context": 262144,
-            "output": 65536
+            "output": 32768
           },
           "modalities": {
             "input": [
@@ -158,44 +191,38 @@
           "options": {
             "thinking": {
               "type": "enabled"
-            },
-            "temperature": 0
+            }
           },
           "variants": {
             "off": {
               "thinking": {
                 "type": "disabled"
-              },
-              "temperature": 0
+              }
             },
             "low": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "medium": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "high": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             },
             "max": {
               "thinking": {
                 "type": "enabled"
-              },
-              "temperature": 0
+              }
             }
           },
           "limit": {
             "context": 131072,
-            "output": 65536
+            "output": 32768
           },
           "modalities": {
             "input": [
@@ -208,319 +235,29 @@
           }
         },
         "minimax-m2p7": {
-          "id": "fireworks/minimax-m2p7",
+          "id": "accounts/fireworks/models/minimax-m2p7",
           "name": "MiniMax M2.7 (SIN)",
           "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
+            "reasoning_effort": "low"
           },
           "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
+            "off": {},
             "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
+              "reasoning_effort": "low"
             },
             "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
+              "reasoning_effort": "medium"
             },
             "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
+              "reasoning_effort": "high"
             },
             "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
+              "reasoning_effort": "max"
             }
           },
           "limit": {
             "context": 196608,
-            "output": 65536
-          }
-        },
-        "glm-5p1-fast": {
-          "id": "accounts/fireworks/routers/glm-5p1-fast",
-          "name": "GLM 5.1 Fast (SIN)",
-          "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
-            "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            }
-          },
-          "limit": {
-            "context": 202752,
-            "output": 65536
-          }
-        },
-        "kimi-k2p6-turbo": {
-          "id": "accounts/fireworks/routers/kimi-k2p6-turbo",
-          "name": "Kimi K2.6 Turbo (SIN)",
-          "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
-            "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            }
-          },
-          "limit": {
-            "context": 262144,
-            "output": 65536
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "deepseek-v4-flash": {
-          "id": "accounts/fireworks/models/deepseek-v4-flash",
-          "name": "DeepSeek V4 Flash (SIN)",
-          "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
-            "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            }
-          },
-          "limit": {
-            "context": 1048576,
-            "output": 65536
-          }
-        },
-        "gpt-oss-120b": {
-          "id": "accounts/fireworks/models/gpt-oss-120b",
-          "name": "GPT-OSS 120B (SIN)",
-          "options": {
-            "temperature": 0
-          },
-          "limit": {
-            "context": 131072,
-            "output": 65536
-          }
-        },
-        "gpt-oss-20b": {
-          "id": "accounts/fireworks/models/gpt-oss-20b",
-          "name": "GPT-OSS 20B (SIN)",
-          "options": {
-            "temperature": 0
-          },
-          "limit": {
-            "context": 131072,
-            "output": 65536
-          }
-        },
-        "kimi-k2p5": {
-          "id": "accounts/fireworks/models/kimi-k2p5",
-          "name": "Kimi K2.5 (SIN)",
-          "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
-            "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            }
-          },
-          "limit": {
-            "context": 262144,
-            "output": 65536
-          },
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          }
-        },
-        "minimax-m2p5": {
-          "id": "accounts/fireworks/models/minimax-m2p5",
-          "name": "MiniMax M2.5 (SIN)",
-          "options": {
-            "thinking": {
-              "type": "enabled"
-            },
-            "temperature": 0
-          },
-          "variants": {
-            "off": {
-              "thinking": {
-                "type": "disabled"
-              },
-              "temperature": 0
-            },
-            "low": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "medium": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "high": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            },
-            "max": {
-              "thinking": {
-                "type": "enabled"
-              },
-              "temperature": 0
-            }
-          },
-          "limit": {
-            "context": 196608,
-            "output": 65536
+            "output": 32768
           }
         },
         "minimax-m3": {
@@ -590,38 +327,6 @@
         "kimi-k2p7-code": {
           "id": "accounts/fireworks/models/kimi-k2p7-code",
           "name": "Kimi K2.7 Code (Vision)",
-          "modalities": {
-            "input": [
-              "text",
-              "image"
-            ],
-            "output": [
-              "text"
-            ]
-          },
-          "options": {
-            "reasoning_effort": "low"
-          },
-          "variants": {
-            "off": {},
-            "low": {
-              "reasoning_effort": "low"
-            },
-            "medium": {
-              "reasoning_effort": "medium"
-            },
-            "high": {
-              "reasoning_effort": "high"
-            }
-          },
-          "limit": {
-            "context": 262144,
-            "output": 32768
-          }
-        },
-        "kimi-k2p7-fast": {
-          "id": "accounts/fireworks/routers/kimi-k2p6-turbo",
-          "name": "Kimi K2.6 Turbo (Fast Router)",
           "modalities": {
             "input": [
               "text",
