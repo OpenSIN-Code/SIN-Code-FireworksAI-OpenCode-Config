@@ -430,6 +430,135 @@
             "context": 128000,
             "output": 4096
           }
+        },
+        "glm-5p2": {
+          "id": "accounts/fireworks/models/glm-5p2",
+          "name": "GLM 5.2 (Vision)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "thinking": {
+              "type": "enabled"
+            }
+          },
+          "variants": {
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
+            "low": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "medium": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "high": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "max": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          },
+          "limit": {
+            "context": 262144,
+            "output": 65536
+          }
+        },
+        "kimi-k2p6-turbo": {
+          "id": "accounts/fireworks/routers/kimi-k2p6-turbo",
+          "name": "Kimi K2.6 Turbo",
+          "options": {
+            "thinking": {
+              "type": "enabled"
+            }
+          },
+          "variants": {
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
+            "low": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "medium": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "high": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "max": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          },
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
+        },
+        "kimi-k2p7-code-fast": {
+          "id": "accounts/fireworks/routers/kimi-k2p7-code-fast",
+          "name": "Kimi K2.7 Code Fast",
+          "options": {
+            "thinking": {
+              "type": "enabled"
+            }
+          },
+          "variants": {
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
+            "low": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "medium": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "high": {
+              "thinking": {
+                "type": "enabled"
+              }
+            },
+            "max": {
+              "thinking": {
+                "type": "enabled"
+              }
+            }
+          },
+          "limit": {
+            "context": 131072,
+            "output": 16384
+          }
         }
       },
       "options": {
