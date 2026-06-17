@@ -238,21 +238,35 @@
           "id": "accounts/fireworks/models/minimax-m2p7",
           "name": "MiniMax M2.7",
           "options": {
-            "reasoning_effort": "low"
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "variants": {
-            "off": {},
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
             "low": {
-              "reasoning_effort": "low"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "medium": {
-              "reasoning_effort": "medium"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "high": {
-              "reasoning_effort": "high"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "max": {
-              "reasoning_effort": "max"
+              "thinking": {
+                "type": "enabled"
+              }
             }
           },
           "limit": {
@@ -273,18 +287,30 @@
             ]
           },
           "options": {
-            "reasoning_effort": "low"
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "variants": {
-            "off": {},
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
             "low": {
-              "reasoning_effort": "low"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "medium": {
-              "reasoning_effort": "medium"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "high": {
-              "reasoning_effort": "high"
+              "thinking": {
+                "type": "enabled"
+              }
             }
           },
           "limit": {
@@ -305,18 +331,30 @@
             ]
           },
           "options": {
-            "reasoning_effort": "low"
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "variants": {
-            "off": {},
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
             "low": {
-              "reasoning_effort": "low"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "medium": {
-              "reasoning_effort": "medium"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "high": {
-              "reasoning_effort": "high"
+              "thinking": {
+                "type": "enabled"
+              }
             }
           },
           "limit": {
@@ -337,18 +375,30 @@
             ]
           },
           "options": {
-            "reasoning_effort": "low"
+            "thinking": {
+              "type": "enabled"
+            }
           },
           "variants": {
-            "off": {},
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            },
             "low": {
-              "reasoning_effort": "low"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "medium": {
-              "reasoning_effort": "medium"
+              "thinking": {
+                "type": "enabled"
+              }
             },
             "high": {
-              "reasoning_effort": "high"
+              "thinking": {
+                "type": "enabled"
+              }
             }
           },
           "limit": {
@@ -370,7 +420,11 @@
           },
           "options": {},
           "variants": {
-            "off": {}
+            "off": {
+              "thinking": {
+                "type": "disabled"
+              }
+            }
           },
           "limit": {
             "context": 128000,
