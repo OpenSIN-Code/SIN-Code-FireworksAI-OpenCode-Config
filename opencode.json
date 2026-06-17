@@ -10,8 +10,7 @@
           "name": "DeepSeek V4 Pro (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 64000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -24,29 +23,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 65536
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -61,8 +56,7 @@
           "name": "GLM 5.1 (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -75,29 +69,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -112,8 +102,7 @@
           "name": "Kimi K2.6 (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -126,29 +115,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -172,8 +157,7 @@
           "name": "Qwen3.6 Plus (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -186,29 +170,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -232,8 +212,7 @@
           "name": "MiniMax M2.7 (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -246,29 +225,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -283,8 +258,7 @@
           "name": "GLM 5.1 Fast (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -297,29 +271,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -334,8 +304,7 @@
           "name": "Kimi K2.6 Turbo (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -348,29 +317,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -394,8 +359,7 @@
           "name": "DeepSeek V4 Flash (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -408,29 +372,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -467,8 +427,7 @@
           "name": "Kimi K2.5 (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -481,29 +440,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -527,8 +482,7 @@
           "name": "MiniMax M2.5 (SIN)",
           "options": {
             "thinking": {
-              "type": "enabled",
-              "budgetTokens": 32000
+              "type": "enabled"
             },
             "temperature": 0
           },
@@ -541,29 +495,25 @@
             },
             "low": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 4000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "medium": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 16000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "high": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 32000
+                "type": "enabled"
               },
               "temperature": 0
             },
             "max": {
               "thinking": {
-                "type": "enabled",
-                "budgetTokens": 64000
+                "type": "enabled"
               },
               "temperature": 0
             }
@@ -571,6 +521,155 @@
           "limit": {
             "context": 196608,
             "output": 65536
+          }
+        },
+        "minimax-m3": {
+          "id": "accounts/fireworks/models/minimax-m3",
+          "name": "MiniMax M3 (Vision)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "reasoning_effort": "low"
+          },
+          "variants": {
+            "off": {},
+            "low": {
+              "reasoning_effort": "low"
+            },
+            "medium": {
+              "reasoning_effort": "medium"
+            },
+            "high": {
+              "reasoning_effort": "high"
+            }
+          },
+          "limit": {
+            "context": 524288,
+            "output": 65536
+          }
+        },
+        "qwen3p7-plus": {
+          "id": "accounts/fireworks/models/qwen3p7-plus",
+          "name": "Qwen 3.7 Plus (Vision)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "reasoning_effort": "low"
+          },
+          "variants": {
+            "off": {},
+            "low": {
+              "reasoning_effort": "low"
+            },
+            "medium": {
+              "reasoning_effort": "medium"
+            },
+            "high": {
+              "reasoning_effort": "high"
+            }
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        },
+        "kimi-k2p7-code": {
+          "id": "accounts/fireworks/models/kimi-k2p7-code",
+          "name": "Kimi K2.7 Code (Vision)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "reasoning_effort": "low"
+          },
+          "variants": {
+            "off": {},
+            "low": {
+              "reasoning_effort": "low"
+            },
+            "medium": {
+              "reasoning_effort": "medium"
+            },
+            "high": {
+              "reasoning_effort": "high"
+            }
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        },
+        "kimi-k2p7-fast": {
+          "id": "accounts/fireworks/routers/kimi-k2p6-turbo",
+          "name": "Kimi K2.6 Turbo (Fast Router)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {
+            "reasoning_effort": "low"
+          },
+          "variants": {
+            "off": {},
+            "low": {
+              "reasoning_effort": "low"
+            },
+            "medium": {
+              "reasoning_effort": "medium"
+            },
+            "high": {
+              "reasoning_effort": "high"
+            }
+          },
+          "limit": {
+            "context": 262144,
+            "output": 32768
+          }
+        },
+        "qwen2p5-vl-32b": {
+          "id": "accounts/fireworks/models/qwen2p5-vl-32b-instruct",
+          "name": "Qwen 2.5 VL 32B (Vision Pro)",
+          "modalities": {
+            "input": [
+              "text",
+              "image"
+            ],
+            "output": [
+              "text"
+            ]
+          },
+          "options": {},
+          "variants": {
+            "off": {}
+          },
+          "limit": {
+            "context": 128000,
+            "output": 4096
           }
         }
       },
